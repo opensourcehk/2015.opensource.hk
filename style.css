@@ -1,0 +1,54 @@
+body, :root {
+	font-size: 16px;
+}
+#introjumbo {
+	text-align: center;
+	color: #fff;
+	background-color: #222;
+}
+
+@media (min-width: 992px) {
+	#introjumbo {
+		background-image: url("images/DSC_1389-min.jpg");
+		background-size: cover;
+		background-position: bottom;
+		background-attachment: fixed;
+	}
+}
+
+#introjumbo, #introjumbo .container {
+	min-height: 100vh;
+}
+
+#introjumbo hr {
+	border-color: #0381c4;
+	width: 20%;
+}
+
+#introjumbo h1 {
+	margin-top: 20vh;
+}
+#introjumbo h2 {
+	margin-bottom: 1em;
+}
+
+span.brand-blue {
+	color: #0381c4;
+}
+
+@media (min-width: 992px) {
+	 .nav-highlight, .nav-highlight a {
+		background-color: #f60;
+		background-color: #0381c4 !important;
+		color: #fff !important;
+	}
+}
+
+.dark-sections {
+	color: #fff;
+	background-color: #111;
+}
+
+.content-container {
+	padding-bottom: 2em;
+}
