@@ -80,10 +80,15 @@
     <div class="container content-container">
       <div class="row">
         <div class="col-md-4 col-md-push-8">
-          <h2>Fee and Registration</h2>
-          <p>RSVP is required. Hong Kong Open Source Conference 2015 is free of charge.</p>
-          <p>To cover some of conference expenses, individual donations are available on registration.</p> 
-          <p><a class="btn btn-default" href="https://hkosc2015.eventbrite.com/" role="button">Register Here</a></p>
+          <div class="row">
+            <h2>Fee and Registration</h2>
+            <p>RSVP is required. Hong Kong Open Source Conference 2015 is free of charge.</p>
+            <p>To cover some of conference expenses, individual donations are available on registration.</p> 
+            <p><a class="btn btn-default" href="https://hkosc2015.eventbrite.com/" role="button">Register Here</a></p>
+          </div>
+          <div class="row">
+            <div class="fb-like-box" data-href="https://www.facebook.com/hkoscon" data-width="340" data-height="560" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+          </div>
         </div>
         <div class="col-md-8 col-md-pull-4">
           <h2>What is HKOSC?</h2>
@@ -190,5 +195,13 @@
       ga('create', 'UA-47867649-3', 'opensource.hk');
       ga('send', 'pageview');
     </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=750888685003281&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
