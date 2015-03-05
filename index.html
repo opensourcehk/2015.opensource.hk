@@ -32,19 +32,20 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
+          <li><a href="agenda">Agenda</a></li>
+          <li><a href="sponsor">Sponsors</a></li>
           <li><a href="organiser">Organiser</a></li>
           <li><a href="staff">Staffs</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Past events<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="http://opensource.hk/en/2014">2014 Archive</a></li>
-              <li><a href="http://opensource.hk/en/2013">2013 Archive</a></li>
+              <li><a href="http://opensource.hk/2014">2014 Archive</a></li>
+              <li><a href="http://opensource.hk/2013">2013 Archive</a></li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="nav-highlight"><a href="http://bit.ly/hkosc2015cfp">Call For Proposals</a></li>
-          <li><a href="https://hkosc2015.eventbrite.com/">Free Registration</a></li>
+          <li class="nav-highlight"><a href="https://hkosc2015.eventbrite.com/">Free Registration</a></li>
         </ul>
       </div>
     </div>
@@ -71,17 +72,22 @@
     <div class="row" id="sponsors">
       <h2>Sponsors</h2>
       <h3>Silver Sponsors</h3>
-      <p><a href="http://www.oracle.com"><img src="images/oracle_sig_logo.gif" alt="Oracle Corporation" style="margin: 10px 10px"></a></p>
+      <p><a href="http://www.oracle.com"><img src="images/oracle_sig_logo.gif" alt="Oracle Corporation" style="margin: 10px 10px"><img src="images/mysql.png" alt="MySQL" style="margin: 10px 10px"></a></p>
     </div>
   </div>
   <div class="dark-sections">
     <div class="container content-container">
       <div class="row">
         <div class="col-md-4 col-md-push-8">
-          <h2>Fee and Registration</h2>
-          <p>RSVP is required. Hong Kong Open Source Conference 2015 is free of charge.</p>
-          <p>To cover some of conference expenses, individual donations are available on registration.</p> 
-          <p><a class="btn btn-default" href="https://hkosc2015.eventbrite.com/" role="button">Register Here</a></p>
+          <div class="row">
+            <h2>Fee and Registration</h2>
+            <p>RSVP is required. Hong Kong Open Source Conference 2015 is free of charge.</p>
+            <p>To cover some of conference expenses, individual donations are available on registration.</p> 
+            <p><a class="btn btn-default" href="https://hkosc2015.eventbrite.com/" role="button">Register Here</a></p>
+          </div>
+          <div class="row">
+            <div class="fb-like-box" data-href="https://www.facebook.com/hkoscon" data-width="340" data-height="560" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+          </div>
         </div>
         <div class="col-md-8 col-md-pull-4">
           <h2>What is HKOSCon?</h2>
@@ -115,14 +121,14 @@
                 <img src="images/28-2.png" class="img-responsive" alt="11 Jan">
               </a>
               <div class="media-body media-middle">
-                <p>Local and overseas speakers are invited through Call For Proposals process. CFP is now started till 11 January.</p>
+                <p>Local and overseas speakers are invited through Call For Proposals process. CFP is now <strong>extended</strong> to <u>28 February</u>.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="media">
               <a class="media-left" href="#">
-                <img src="images/hkstp.png" class="img-responsive" alt="11 Jan">
+                <img src="images/hkstp.png" class="img-responsive" alt="Hong Kong Science Park">
               </a>
               <div class="media-body media-middle">
                 <p>
@@ -139,7 +145,7 @@
     <div class="row">
       <div class="col-md-4">
         <h2>Call For Proposals</h2>
-        <p>Call For Proposals (CFP) is now started, overseas and local F/OSS contributors are all welcome to submit proposals by 11st January 2015.</p>
+        <p>Call For Proposals (CFP) is now started, overseas and local F/OSS contributors are all welcome to submit proposals by 28th February 2015.</p>
         <p><a class="btn btn-default" href="http://bit.ly/hkosc2015cfp" role="button">Submit your proposals &raquo;</a></p>
       </div>
       <div class="col-md-4">
@@ -160,8 +166,8 @@
         <h2>History of Conference</h2>
         <p>Idea of organising a open source conference in Hong Kong by community is started in 2004.<p>
           <p>After a success in organising GNOME.Asia Summit 2012 in Hong Kong, open source community organized first community driven open source conference in Hong Kong in 2013.</p>
-          <p><a class="btn btn-default" href="http://opensource.hk/en/2013" role="button">HKOSCon 2013 at CityU &raquo;</a></p>
-          <p><a class="btn btn-default" href="http://opensource.hk/en/2014" role="button">HKOSCon 2014 at HKSTP &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://opensource.hk/2013" role="button">HKOSCon 2013 at CityU &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://opensource.hk/2014" role="button">HKOSCon 2014 at HKSTP &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Contact Organiser</h2>
@@ -188,5 +194,13 @@
       ga('create', 'UA-47867649-3', 'opensource.hk');
       ga('send', 'pageview');
     </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=750888685003281&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
