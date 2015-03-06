@@ -95,6 +95,9 @@ span.brand-blue {
 .navbar {
 	border-radius: 0;
 }
+.navbar.nav-dark {
+	background-color: #000;
+}
 
 .dark-sections .content-container a:not(.btn) {
 	color:#fff;
