@@ -38,21 +38,6 @@ body, :root {
 	color: #FFF800;
 }
 
-#introjumbo p {
-
-}
-
-span.brand-blue {
-	color: #0381c4;
-}
-
-@media (min-width: 992px) {
-	 .nav-highlight, .nav-highlight a {
-		background-color: rgb(3, 129, 196);
-		color: #fff !important;
-	}
-}
-
 .dark-sections {
 	color: #fff;
 	background-color: #111;
@@ -63,40 +48,8 @@ span.brand-blue {
 	padding-bottom: 2em;
 }
 
-.navbar.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-.navbar.affix-top {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin:0;
-    border: transparent;
-    border-top: #555 solid 1px;
-    border-bottom: #555 solid 1px;
-    background-color: transparent;
-}
-.navbar.affix-top *{
-    color: #fff !important;
-    border: none;
-}
-.navbar.affix-top .nav-highlight, .navbar.affix-top .nav-highlight a {
-    background-color: rgba(3, 129, 196, 0.3) !important;
-}
-.navbar.affix-top .nav-highlight:hover, .navbar.affix-top .nav-highlight:hover a {
-    background-color: rgba(3, 129, 196, 0.5) !important;
-}
-.navbar.affix-top .navbar-nav li:hover {
-	background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar {
-	border-radius: 0;
-}
-.navbar.nav-dark {
-	background-color: #000;
+span.brand-blue {
+	color: #0381c4;
 }
 
 .dark-sections .content-container a:not(.btn) {
@@ -110,4 +63,78 @@ span.brand-blue {
 
 .speaker img {
 	max-height: 168px;
+}
+
+
+/* navbar */
+.nav-highlight, .nav-highlight a {
+	background-color: rgb(3, 129, 196);
+	color: #fff !important;
+}
+.navbar {
+	border-radius: 0;
+}
+
+@media (max-width: 992px) {
+	.navbar {
+	    position: fixed !important;
+	    top: 0 !important;
+	    width: 100% !important;
+		background-image: url("images/footer_lodyas.png");
+		background-size: cover;
+		background-position: bottom;
+		background-attachment: fixed;
+	    border: transparent;
+	    border-top: #555 solid 1px;
+	    border-bottom: #555 solid 1px;
+	    background-color: transparent;
+	}
+	.navbar *{
+    	color: #fff !important;
+    	border: none !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar.affix-top {
+	    background-color: transparent;
+		bottom: 0;
+	    border: transparent;
+	    border-top: #555 solid 1px;
+	    border-bottom: #555 solid 1px;
+	    background-color: transparent;
+        position: absolute;
+	}
+}
+
+.navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar.affix-top {
+    width: 100%;
+    margin:0;
+
+}
+.navbar.affix-top *{
+    color: #fff !important;
+    border: none;
+}
+
+.navbar.affix-top .nav-highlight, .navbar.affix-top .nav-highlight a {
+    background-color: rgba(3, 129, 196, 0.3) !important;
+}
+.navbar.affix-top .nav-highlight:hover, .navbar.affix-top .nav-highlight:hover a {
+    background-color: rgba(3, 129, 196, 0.5) !important;
+}
+.navbar.affix-top .navbar-nav li:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+	.media-body {
+		display: table-row;
+	}
 }
