@@ -95,9 +95,6 @@ span.brand-blue {
 .navbar {
 	border-radius: 0;
 }
-.navbar.nav-dark {
-	background-color: #000;
-}
 
 .dark-sections .content-container a:not(.btn) {
 	color:#fff;
@@ -110,4 +107,13 @@ span.brand-blue {
 
 .speaker img {
 	max-height: 168px;
+}
+
+@media (max-width: 992px) {
+	.navbar {
+		background-image: url("images/footer_lodyas.png");
+		background-size: cover;
+		background-position: bottom;
+		background-attachment: fixed;
+	}
 }
